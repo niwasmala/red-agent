@@ -51,6 +51,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install build
       - name: Build package
-        run: python -m build --config-setting=--global-option=egg_info --config-setting=--global-option=--tag-build=-${{ github.run_number }}.${{ github.run_attempt }}
+        run: python -m build -C--global-option=bdist_wheel -C--global-option=--build-number=${{ github.run_number }}.${{ github.run_attempt }}
       - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
