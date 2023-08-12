@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+src/red-agent/__init__.py
+src/red_agent.egg-info/PKG-INFO
+src/red_agent.egg-info/SOURCES.txt
+src/red_agent.egg-info/dependency_links.txt
+src/red_agent.egg-info/top_level.txt
